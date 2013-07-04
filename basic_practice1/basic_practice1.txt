@@ -1,0 +1,146 @@
+#in this file i'm using string1 and string2 so many times these values are:
+
+string1="RUBY parses a file by looking for <br/> one of the special tags that tells it to start interpreting the text as RUBY code. The parser then executes all of the code it finds until it runs into a RUBY closing <br/> tag."
+
+
+and
+
+string2="RUBY does not require (or support) explicit type definition in variable declaration; a variable's type is determined by the context in which the variable is used."
+
+			#-------------------------------------------assignment Question------------------------------------------------------
+
+Question1: Find occurance of RUBY from string 1.?
+Answer:
+string1.scan("RUBY").length
+
+
+Question2:Find the position where RUBY occures in the string 1?
+Answer:
+"RUBY parses a file by looking for <br/> one of the special tags that tells it to start interpreting the text as RUBY code. The parser then executes all of the code it finds until it runs into a RUBY closing <br/> tag.".index('RUBY')
+
+
+Question3:Create array of words in string 1 & print them using a recursive function?
+Answer:
+	{
+  		string1="RUBY parses a file by looking for <br/> one of the special tags that tells it to start interpreting the text as RUBY code. The parser then 			executes all of the code it finds until it runs into a RUBY closing <br/> tag."
+
+		string3=string1.split
+
+        }
+
+
+Question4:Capitalise string 1?
+Answer:
+ string1.upcase!
+
+
+Question5:Combine string 1 & 2?
+Answer:
+ string1.concat(string2)
+
+
+Question6:Print current date?
+Answer: 	
+	{
+		time1=Time.new
+	 	puts "Current Time :" + time1.inspect
+
+	}
+
+
+Question7: print 12th Jan 2012?
+Answer: 	
+	{
+		past=Time.local(2012,1,12)
+                past.strftime("%dth %b %Y")
+
+
+	}
+
+
+Question8:add 7 days in current date?
+Answer:	
+	{
+	 	 now=Time.now
+		 future=now + (7*24*60*60)
+		 puts "Future Time is:" + future.inspect
+	}
+
+
+Question9:Cut the string 1 into 4 parts & print it?
+Answer:
+	{
+		 print string1.split(" ",4)
+	}
+
+
+Question10: Divide the string 1 by occurances of '.'. Combine the array in reverse word sequence?
+Answer:
+	{
+		 a="RUBY parses a file by looking for <br/> one of the special tags that tells it to start interpreting the text as RUBY code. The parser then 			    executes all of the code it finds until it runs into a RUBY closing <br/> tag.".split(".").first
+		
+		 a.reverse!
+
+		 b="RUBY parses a file by looking for <br/> one of the special tags that tells it to start interpreting the text as RUBY code. The parser then 			    executes all of the code it finds until it runs into a RUBY closing <br/> tag.".split(".").last
+		
+		b.reverse!
+
+		c=b+a
+
+		puts "Splits the array and then combined into the reverse order of word is:"+c
+
+	}
+
+
+Question11:Remove the HTML characters from string?
+Answer:
+	{
+		"RUBY parses a file by looking for <br/> one of the special tags that tells it to start interpreting the text as RUBY code. The parser then executes 			all of the code it finds until it runs into a RUBY closing <br/> tag.".split("<br/>")
+	}
+
+
+
+
+Question12:Print the 'RUBY' word from string 1 by traversing it using string functions?
+Answer:
+	{
+		"RUBY parses a file by looking for <br/> one of the special tags that tells it to start interpreting the text as RUBY code. The parser then executes 			 all of the code it finds until it runs into a RUBY closing <br/> tag.".scan("RUBY")
+
+	}
+
+
+Question13:Find the length of string 1 & 2?
+Answer:
+	{
+		 string1.length
+		 string2.length
+	}
+
+
+Question14: Compare two dates. (12-04-2010 & 12-05-2011). Calculate the days between these two dates?
+Answer:
+	{
+		time1=Time.local(2010,4,12)
+		time2=Time.local(2011,5,12)
+		a=time2-time1
+		a/(24*60*60)
+		 puts "The day between 12-4-2010 to 12-5-2911 is:"+ a.to_s
+	}
+
+
+Question15:Print date after 20 days from current date?
+Answer:
+	{
+		now = Time.now
+		future = now + (20*24*60*60)
+		puts "Future Time is:"+ future.inspect
+	}
+
+Question16:Print date in array format?
+Answer:
+	{
+		now=Time.new
+		puts "Array formate of Date is:"+now.to_a.inspect
+
+	}
+
