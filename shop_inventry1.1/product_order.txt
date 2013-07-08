@@ -1,0 +1,5 @@
+2 | 1 | Parle-G | abc | abc@gmail.com | 20/05/2050 | 345676544xxxx1452
+1 | 2 | Mengo juce | yahoo | wallstreet newyork | 20/05/2050 | 123456789xxxx145278
+1 | 4 | TV | a | a | a | a
+1 | 1 | Garments | Mohit singh | 303 shi ram construction darsion park aundh | 20/10/2050 | 2345879098xxx145236
+1 | 3 | Smartfone | Aditya | 43 abc choke | 20/04/2050 | 349870xxxx145236
